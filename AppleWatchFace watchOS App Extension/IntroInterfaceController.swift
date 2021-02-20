@@ -8,13 +8,12 @@
 import WatchKit
 import Foundation
 
-
 class IntroInterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        presentController(withName: "InterFaceController", context: nil)
+        presentController(withName: "InterfaceController", context: nil)
     }
 
     override func willActivate() {
@@ -28,6 +27,7 @@ class IntroInterfaceController: WKInterfaceController {
     }
 
     @IBAction func goToWatchFace() {
-        presentController(withName: "InterFaceController", context: nil)
+        presentController(withName: "InterfaceController", context: nil)
     }
 }
+

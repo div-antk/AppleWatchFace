@@ -6,10 +6,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--InterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchFace_Extension">
+                <controller identifier="InterfaceController" title="InterfaceController" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchFace_Extension">
                     <items>
                         <spriteKitScene alignment="left" id="ARY-87-yzO"/>
                     </items>
