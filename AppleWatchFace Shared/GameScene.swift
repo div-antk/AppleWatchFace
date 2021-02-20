@@ -9,6 +9,9 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+    var hourHand:SKSpriteNode = SKSpriteNode()
+    var minuteHand:SKSpriteNode = SKSpriteNode()
+    var secondHand:SKSpriteNode = SKSpriteNode()
     
     fileprivate var label : SKLabelNode?
     fileprivate var spinnyNode : SKShapeNode?
@@ -62,6 +65,22 @@ class GameScene: SKScene {
     
     #if os(watchOS)
     override func sceneDidLoad() {
+        
+        // 時針
+        if let hrHand:SKSpriteNode = self.childNode(withName: "HourHand") as? SKSpriteNode {
+            hourHand = hrHand
+        }
+        
+        // 分針
+        if let minHand:SKSpriteNode = self.childNode(withName: "MinuteHand") as? SKSpriteNode {
+            minuteHand = minHand
+        }
+        
+        // 秒針
+        if let secHand:SKSpriteNode = self.childNode(withName: "SecondHand") as? SKSpriteNode {
+            secondHand = secHand
+        }
+        
         self.setUpScene()
     }
     #else
@@ -80,6 +99,26 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        let date = Date()
+        
+        let calender = Calendar.current
+        
+        let hour = CGFloat(calender.component(.hour, from: date))
+        
+        let minutes = CGFloat(calender.component(.minute, from: date))
+        
+        let seconds = CGFloat(calender.component(.second, from: date))
+        
+        hourHand.zRotation = -1 * deg2rad(hour * 30 + minutes/2)
+        
+        minuteHand.zRotation = -1 * deg2rad(minutes * 6)
+        
+        secondHand.zRotation = -1 * deg2rad(seconds * 6)
+    }
+    
+    // 度からラジアン
+    func deg2rad(_ number: CGFloat) -> CGFloat {
+        return number * .pi / 180
     }
 }
 
