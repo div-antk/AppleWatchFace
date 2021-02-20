@@ -109,6 +109,7 @@ class GameScene: SKScene {
         
         let seconds = CGFloat(calender.component(.second, from: date))
         
+        // 針の動く設定
         hourHand.zRotation = -1 * deg2rad(hour * 30 + minutes/2)
         
         minuteHand.zRotation = -1 * deg2rad(minutes * 6)

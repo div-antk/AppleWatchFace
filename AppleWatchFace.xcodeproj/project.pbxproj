@@ -24,6 +24,8 @@
 		3B326C9E25E0B8950059705C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B326C6D25E0B8950059705C /* Assets.xcassets */; };
 		3B326C9F25E0B8950059705C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B326C6D25E0B8950059705C /* Assets.xcassets */; };
 		3B326CB125E0B8D60059705C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B326CB025E0B8D60059705C /* Assets.xcassets */; };
+		3B326CBB25E0CCCF0059705C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B326CBA25E0CCCF0059705C /* Assets.xcassets */; };
+		3B326CC325E0D1C60059705C /* IntroInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326CBF25E0CDEF0059705C /* IntroInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		3B326C9625E0B8950059705C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		3B326C9825E0B8950059705C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B326CB025E0B8D60059705C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B326CBA25E0CCCF0059705C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B326CBF25E0CDEF0059705C /* IntroInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				3B326C8725E0B8950059705C /* Interface.storyboard */,
+				3B326CBA25E0CCCF0059705C /* Assets.xcassets */,
 				3B326C8A25E0B8950059705C /* Info.plist */,
 			);
 			path = "AppleWatchFace watchOS App";
@@ -163,6 +168,7 @@
 		3B326C9325E0B8950059705C /* AppleWatchFace watchOS App Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3B326CBF25E0CDEF0059705C /* IntroInterfaceController.swift */,
 				3B326C9425E0B8950059705C /* InterfaceController.swift */,
 				3B326C9625E0B8950059705C /* ExtensionDelegate.swift */,
 				3B326C9825E0B8950059705C /* Info.plist */,
@@ -285,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B326C9F25E0B8950059705C /* Assets.xcassets in Resources */,
+				3B326CBB25E0CCCF0059705C /* Assets.xcassets in Resources */,
 				3B326C8925E0B8950059705C /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +324,7 @@
 			files = (
 				3B326C9D25E0B8950059705C /* GameScene.swift in Sources */,
 				3B326C9725E0B8950059705C /* ExtensionDelegate.swift in Sources */,
+				3B326CC325E0D1C60059705C /* IntroInterfaceController.swift in Sources */,
 				3B326C9525E0B8950059705C /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
