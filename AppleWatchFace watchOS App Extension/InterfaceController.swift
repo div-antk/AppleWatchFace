@@ -13,6 +13,10 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var skInterface: WKInterfaceSKScene!
     
+    // ゴング音
+    private var highGongPlayer:AVAudioPlayer?
+    private var lowGongPlayer:AVAudioPlayer?
+
     private var isPlaying = false
     
     override func awake(withContext context: Any?) {
@@ -113,10 +117,11 @@ class InterfaceController: WKInterfaceController {
     
     func lowGong() {
         
-        let lowGong = Bundle.main.url(forResource: "low", withExtension: "wave")
+        let lowGong = Bundle.main.url(forResource: "low", withExtension: "wav")
+        
         do {
-//            lowGongPlayer = try AVAudioPlayer(contentsOf: lowGong!)
-//            lowGongPlayer?.play()
+            lowGongPlayer = try AVAudioPlayer(contentsOf: lowGong!)
+            lowGongPlayer?.play()
         } catch {
             print("error")
         }
@@ -124,10 +129,10 @@ class InterfaceController: WKInterfaceController {
     
     func highGong() {
         
-        let highGong = Bundle.main.url(forResource: "high", withExtension: "wave")
+        let highGong = Bundle.main.url(forResource: "high", withExtension: "wav")
         do {
-//            highGongPlayer = try AVAudioPlayer(contentsOf: highGong!)
-//            highGongPlayer?.play()
+            highGongPlayer = try AVAudioPlayer(contentsOf: highGong!)
+            highGongPlayer?.play()
         } catch {
             print("error")
         }
