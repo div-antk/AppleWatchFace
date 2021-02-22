@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B03065C25E3F11E000506A7 /* high.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B03065B25E3F11E000506A7 /* high.wav */; };
+		3B03066125E3F12B000506A7 /* row.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B03066025E3F12B000506A7 /* row.wav */; };
 		3B326C7625E0B8950059705C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326C7525E0B8950059705C /* AppDelegate.swift */; };
 		3B326C7825E0B8950059705C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B326C7725E0B8950059705C /* GameViewController.swift */; };
 		3B326C7B25E0B8950059705C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B326C7925E0B8950059705C /* Main.storyboard */; };
@@ -71,6 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B03065B25E3F11E000506A7 /* high.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = high.wav; sourceTree = "<group>"; };
+		3B03066025E3F12B000506A7 /* row.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = row.wav; sourceTree = "<group>"; };
 		3B326C6A25E0B8920059705C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		3B326C6B25E0B8920059705C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		3B326C6C25E0B8920059705C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				3B326C9625E0B8950059705C /* ExtensionDelegate.swift */,
 				3B326C9825E0B8950059705C /* Info.plist */,
 				3B326CB025E0B8D60059705C /* Assets.xcassets */,
+				3B03065B25E3F11E000506A7 /* high.wav */,
+				3B03066025E3F12B000506A7 /* row.wav */,
 			);
 			path = "AppleWatchFace watchOS App Extension";
 			sourceTree = "<group>";
@@ -300,8 +306,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B03065C25E3F11E000506A7 /* high.wav in Resources */,
 				3B326CB125E0B8D60059705C /* Assets.xcassets in Resources */,
 				3B326C9B25E0B8950059705C /* GameScene.sks in Resources */,
+				3B03066125E3F12B000506A7 /* row.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

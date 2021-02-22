@@ -12,8 +12,14 @@
                 <controller identifier="InterfaceController" title="InterfaceController" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchFace_Extension">
                     <items>
                         <spriteKitScene alignment="left" id="ARY-87-yzO"/>
+                        <button width="136" height="28" alignment="left" title="Button" id="TKL-ed-8Tb">
+                            <connections>
+                                <action selector="button" destination="AgC-eL-Hgc" id="OER-o2-ww3"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="button" destination="TKL-ed-8Tb" id="7xW-Re-ya9"/>
                         <outlet property="skInterface" destination="ARY-87-yzO" id="U6w-Od-uXj"/>
                     </connections>
                 </controller>
