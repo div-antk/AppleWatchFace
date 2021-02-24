@@ -70,17 +70,14 @@ class GameScene: SKScene {
         if let hrHand:SKSpriteNode = self.childNode(withName: "HourHand") as? SKSpriteNode {
             hourHand = hrHand
         }
-        
         // 分針
         if let minHand:SKSpriteNode = self.childNode(withName: "MinuteHand") as? SKSpriteNode {
             minuteHand = minHand
         }
-        
         // 秒針
         if let secHand:SKSpriteNode = self.childNode(withName: "SecondHand") as? SKSpriteNode {
             secondHand = secHand
         }
-        
         self.setUpScene()
     }
     #else
